@@ -1,5 +1,8 @@
 from application import app,db
 
+
+
+
 @app.route('/')
 def index():
     return "Welcome"
