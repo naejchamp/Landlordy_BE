@@ -16,27 +16,27 @@ CORS(app)
 
 
 from application.apis.auth import auth
-app.register_blueprint(auth,prefix='/apis/auth')
+app.register_blueprint(auth)
 
 
 from application.apis.tenant import tenant
-app.register_blueprint(tenant,prefix='/apis/tenant')
+app.register_blueprint(tenant)
 
 
 from application.apis.property import _property
-app.register_blueprint(_property,prefix='/apis/property')
+app.register_blueprint(_property)
 
 from application.apis.expense import expense
-app.register_blueprint(expense,prefix='/apis/expense')
+app.register_blueprint(expense)
 
 
 from application.apis.tenant_assigned_properties import tenant_assigned_properties
-app.register_blueprint(tenant_assigned_properties,prefix='/apis/tenant_assigned_properties')
+app.register_blueprint(tenant_assigned_properties)
 
 
 from application.apis.maintainer import maintainer
-app.register_blueprint(maintainer,prefix='/apis/maintainer')
+app.register_blueprint(maintainer)
 
 
 from application.apis.maintainance_ticket import maintainance_ticket
-app.register_blueprint(maintainance_ticket,prefix='/apis/maintainance_ticket')
+app.register_blueprint(maintainance_ticket)
