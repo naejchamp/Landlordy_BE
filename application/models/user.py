@@ -9,6 +9,6 @@ class User(db.Model):
     role = db.Column(db.String(20), nullable=False)
 
     #maintainter columns
-    phone_no = db.Column(db.String(200), nullable=True)
-    service = db.Column(db.String(200), nullable=True)
+    phone_no = db.Column(db.String(200), nullable=True,default='None')
+    service = db.Column(db.String(200), nullable=True,default='None')
 
