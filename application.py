@@ -1,5 +1,10 @@
 from application import app,db
 
+@app.route('/')
+def index():
+    return "Welcome"
+
+
 if __name__ == '__main__':
     app.app_context().push()
     db.create_all()
